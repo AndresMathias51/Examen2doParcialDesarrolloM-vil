@@ -1,4 +1,5 @@
 import Boton from "@/components/Boton";
+import Descripcion from "@/components/Descripcion";
 import { ThemedView } from "@/components/themed-view";
 import { BottomTabInset, MaxContentWidth, Spacing } from "@/constants/theme";
 import { StyleSheet } from "react-native";
@@ -6,6 +7,7 @@ import { StyleSheet } from "react-native";
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
+      <Descripcion></Descripcion>
       <Boton titulo="Get Started"></Boton>
     </ThemedView>
   );
@@ -15,7 +17,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    flexDirection: "row",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: 44,
   },
   safeArea: {
     flex: 1,
