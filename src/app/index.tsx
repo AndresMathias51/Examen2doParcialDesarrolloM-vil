@@ -1,12 +1,18 @@
+import BarraSuperior from "@/components/BarraSuperior";
 import Boton from "@/components/Boton";
 import Descripcion from "@/components/Descripcion";
+import Logo from "@/components/Logo";
 import { ThemedView } from "@/components/themed-view";
+import Titulo from "@/components/Titulo";
 import { BottomTabInset, MaxContentWidth, Spacing } from "@/constants/theme";
 import { StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
+      <BarraSuperior></BarraSuperior>
+      <Titulo></Titulo>
+      <Logo></Logo>
       <Descripcion></Descripcion>
       <Boton titulo="Get Started"></Boton>
     </ThemedView>
